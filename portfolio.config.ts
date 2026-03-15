@@ -28,7 +28,7 @@ export const portfolioConfig = {
   },
 
   about: {
-    bio: "I'm a backend engineer currently at Infineon Technologies, where I own the API platform and define standards across the org. My work sits at the intersection of software engineering, DevSecOps, and developer tooling — I care about systems that are fast, observable, and maintainable at scale. I'm not a framework tourist; I pick tools that solve problems. My stack leans backend-first: .NET, Node.js, Python, Postgres, Redis, Docker, Kubernetes. I'm equally fluent in cloud-native CI/CD and AI agent orchestration. Outside work, I'm building side projects that push production limits and grinding competitive programming to stay sharp.",
+    bio: "I'm a backend engineer currently at Infineon Technologies, where I own the API platform and define standards across the org. My work sits at the intersection of software engineering, DevSecOps, and developer tooling. I care about systems that are fast, observable, and maintainable at scale. I'm not a framework tourist; I pick tools that solve problems. My stack leans backend-first: .NET, Node.js, Python, Postgres, Redis, Docker, Kubernetes. I'm equally fluent in cloud-native CI/CD and AI agent orchestration. Outside work, I'm building side projects that push production limits and grinding competitive programming to stay sharp.",
     stats: [
       { label: "Year at Infineon", value: "1+", suffix: "" },
       { label: "API Latency Reduction", value: "96", suffix: "%" },
@@ -153,28 +153,68 @@ export const portfolioConfig = {
 
   linkedinPosts: [
     {
-      date: "2025-03-01",
-      title: "Why API latency matters more than you think",
+      date: "2026-03-01",
+      title: "Harness Engineering: The Real AI Advantage",
       excerpt:
-        "Most engineers focus on throughput. Here's why latency is the metric that will break you at scale — and the three changes that cut our p99 by 96%.",
-      url: "https://www.linkedin.com/in/opsingh861",
-      tags: ["backend", "performance", "api"],
+        "The real differentiator in 2026 isn't the model — it's the agent harness around it. Context management, tool orchestration, retry logic, and sub-agent coordination are what make AI reliable in production.",
+      url: "https://www.linkedin.com/posts/opsingh861_aiengineering-agenticai-harnessengineering-activity-7432480848643465216-sbOE",
+      tags: ["agenticai", "harnessengineering", "aiinfrastructure"],
     },
     {
-      date: "2025-01-15",
-      title: "DevSecOps isn't optional anymore",
+      date: "2026-02-22",
+      title: "AI Overuse: When Deterministic Logic Trumps GenAI",
       excerpt:
-        "After integrating SAST, DAST, and dependency scanning into our GitLab CI pipeline, here's what we learned about shifting security left without killing developer velocity.",
-      url: "https://www.linkedin.com/in/opsingh861",
-      tags: ["devsecops", "security", "cicd"],
+        "Not everything needs Generative AI. Knowing when a simple algorithm outperforms an LLM — and having the discipline to choose it — is the real engineering skill in 2026.",
+      url: "https://www.linkedin.com/posts/opsingh861_aiengineering-generativeai-softwareengineering-activity-7429919491289083904-YKSO",
+      tags: ["aiengineering", "generativeai", "softwareengineering"],
     },
     {
-      date: "2024-11-10",
-      title: "Building an AI Agent Registry from scratch",
+      date: "2026-02-15",
+      title: "LLM Context Rot: Why Attention Fades with Long Chats",
       excerpt:
-        "How we built an internal registry for reusable AI agents at Infineon — the architecture decisions, the tradeoffs, and what we'd do differently.",
-      url: "https://www.linkedin.com/in/opsingh861",
-      tags: ["ai", "platform", "engineering"],
+        "LLMs degrade as conversations grow — context rot. The attention mechanism has hard limits, and how you engineer what enters the context window determines the quality of your AI system.",
+      url: "https://www.linkedin.com/posts/opsingh861_aiengineering-llm-contextengineering-activity-7427415463812300800-YfeS",
+      tags: ["llm", "contextengineering", "agenticai"],
+    },
+    {
+      date: "2026-02-08",
+      title: "Prompt Engineering vs Context Engineering",
+      excerpt:
+        "They are NOT the same. Prompt engineering is how you ask; context engineering is what you give the model to reason over. Confusing them leads to brittle, unpredictable AI applications.",
+      url: "https://www.linkedin.com/posts/opsingh861_aiengineering-promptengineering-contextengineering-activity-7424851683744186370-bEdz",
+      tags: ["promptengineering", "contextengineering", "llm"],
+    },
+    {
+      date: "2026-02-01",
+      title: "Dockerfile Best Practices for Performance & Security",
+      excerpt:
+        "Lessons from real CI/CD pipelines: choosing minimal base images, leveraging layer caching, multi-stage builds, and running as non-root can cut image size and attack surface significantly.",
+      url: "https://www.linkedin.com/posts/opsingh861_docker-devops-cloudengineering-activity-7422323156109152256-yWFg",
+      tags: ["docker", "devops", "containersecurity"],
+    },
+    {
+      date: "2026-01-25",
+      title: "MCPs Explained: Why Too Many Tools Confuse AI Agents",
+      excerpt:
+        "MCPs are functions for AI agents — each exposing a name, description, and parameters the LLM reads before deciding what to call. More tools means more decision overhead and more failure modes.",
+      url: "https://www.linkedin.com/posts/opsingh861_aiengineering-agenticai-mcp-activity-7419774885842800640-kBHv",
+      tags: ["agenticai", "mcp", "toolcalling"],
+    },
+    {
+      date: "2026-01-18",
+      title: "AI Agent Performance Degrades Beyond 128 Tools",
+      excerpt:
+        "Enabling 132 MCPs in Copilot/Cursor triggers a real warning at 128. Every tool adds to the LLM's selection overhead — keep your agent toolset lean, scoped, and purposeful.",
+      url: "https://www.linkedin.com/posts/opsingh861_aiengineering-githubcopilot-cursorai-activity-7417226982289129472-Pjiy",
+      tags: ["aiengineering", "mcp", "githubcopilot"],
+    },
+    {
+      date: "2026-01-11",
+      title: "AI in Engineering: Balancing Trust and Control",
+      excerpt:
+        "Agentic AI can write your entire codebase while you grab coffee. The power is real — but so is the risk. Knowing when to let the agent run and when to review is the engineering discipline that matters now.",
+      url: "https://www.linkedin.com/posts/opsingh861_softwareengineering-aiintech-githubcopilot-activity-7414501040500379649-HHhG",
+      tags: ["softwareengineering", "aiintech", "agenticai"],
     },
   ],
 };

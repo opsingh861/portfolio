@@ -23,7 +23,8 @@ export async function POST(req: NextRequest) {
   }
 
   if (!process.env.RESEND_API_KEY) {
-    return NextResponse.json({ ok: true });
+    console.error("RESEND_API_KEY is not configured");
+    return NextResponse.json({ error: "Unable to send message at this time. Please try again later." }, { status: 500 });
   }
 
   try {
@@ -37,6 +38,6 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ ok: true });
   } catch (err) {
     console.error("Email send error:", err);
-    return NextResponse.json({ error: "Failed to send email" }, { status: 500 });
+    return NextResponse.json({ error: "Unable to send message at this time. Please try again later." }, { status: 500 });
   }
 }
