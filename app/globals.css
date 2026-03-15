@@ -3,6 +3,7 @@
 @import "tailwindcss";
 
 :root {
+  --navbar-height: 4rem;
   --bg: #0a0a0a;
   --surface: #111111;
   --surface-2: #161616;
@@ -17,14 +18,17 @@
   --font-mono: 'DM Mono', monospace;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+@layer base {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--navbar-height) + 1rem); /* fixed navbar height + breathing room */
   background-color: var(--bg);
 }
 

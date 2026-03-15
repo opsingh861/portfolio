@@ -10,6 +10,16 @@ export default function Projects() {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-80px" });
 
+  // If the count of non-featured projects is odd the last one would be alone
+  // in a 2-col row — give it full width so it matches the featured card width.
+  const nonFeaturedIndices = projects.flatMap((project, index) =>
+    project.featured ? [] : [index]
+  );
+  const orphanNonFeaturedIndex =
+    nonFeaturedIndices.length % 2 !== 0
+      ? nonFeaturedIndices[nonFeaturedIndices.length - 1]
+      : -1;
+
   return (
     <section id="projects" className="py-24 px-6">
       <div className="max-w-6xl mx-auto" ref={ref}>
@@ -39,7 +49,7 @@ export default function Projects() {
               initial={{ opacity: 0, y: 30 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: i * 0.15 }}
-              className={project.featured ? "md:col-span-2 md:grid md:grid-cols-2 md:gap-6" : ""}
+              className={project.featured || i === orphanNonFeaturedIndex ? "md:col-span-2" : ""}
             >
               {project.featured ? (
                 <div className="md:col-span-2">

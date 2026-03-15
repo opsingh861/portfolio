@@ -35,7 +35,10 @@ export default function Navbar() {
         borderBottom: scrolled ? "1px solid var(--border)" : "none",
       }}
     >
-      <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <div
+        className="max-w-6xl mx-auto px-6 flex items-center justify-between"
+        style={{ height: "var(--navbar-height)" }}
+      >
         {/* Logo */}
         <a
           href="#"
