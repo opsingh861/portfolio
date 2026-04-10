@@ -9,7 +9,7 @@ export const portfolioConfig = {
     title: "Backend & API Engineer",
     description:
       "Backend & API Engineer building high-performance APIs, developer platforms, and backend systems that scale. Based in Bangalore, India.",
-    url: "https://adityacodes.dev",
+    url: "https://aditya-dhanraj.is-a.dev",
     email: "opsingh861@gmail.com",
     phone: "6202908846",
     location: "Bangalore, Karnataka",
