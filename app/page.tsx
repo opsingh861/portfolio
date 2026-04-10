@@ -3,6 +3,7 @@ import Footer from "@/components/ui/Footer";
 import ScrollProgress from "@/components/ui/ScrollProgress";
 import CustomCursor from "@/components/ui/CustomCursor";
 import ChatWidget from "@/components/ui/ChatWidget";
+import LeadCapture from "@/components/ui/LeadCapture";
 import Hero from "@/components/sections/Hero";
 import About from "@/components/sections/About";
 import Experience from "@/components/sections/Experience";
@@ -32,6 +33,7 @@ export default function Home() {
       </main>
       <Footer />
       <ChatWidget />
+      <LeadCapture />
     </>
   );
 }
